@@ -1,0 +1,28 @@
+{
+    "name": "naughtyjoint/common-cms-template",
+    "authors": [
+        {
+            "name": "naughtyjoint",
+            "email": "wateleee@gmail.com"
+        }
+    ],
+    "require": {
+        "barryvdh/laravel-dompdf": "^0.9.0",
+        "maatwebsite/excel": "^3.1"
+    },
+    "require-dev": {
+        "laravel/breeze": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Naughtyjoint\\CMS\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Naughtyjoint\\CMS\\CommonCmsTemplateServiceProvider"
+            ]
+        }
+    }
+}
