@@ -11,7 +11,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>9055蔬果運送管理後台</h1>
+                    <h1>{{ config('cms.store_name') }}管理後台</h1>
                 </div>
             </div>
         </div>

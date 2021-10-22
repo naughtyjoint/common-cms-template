@@ -26,6 +26,14 @@ class CommonCmsTemplateServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
         $this->publishes([
+            __DIR__.'/../config/cms.php' => config_path('cms.php'),
+        ]);
+
+        $this->publishes([
+            __DIR__.'/../database/seeders/DatabaseSeeder.php' => database_path('seeders/DatabaseSeeder.php'),
+        ]);
+
+        $this->publishes([
             __DIR__.'/../resources/views' => resource_path('views'),
         ]);
 
@@ -42,7 +50,12 @@ class CommonCmsTemplateServiceProvider extends ServiceProvider
         ]);
 
         $this->publishes([
-            __DIR__.'/../routes/web.php' => base_path('routes/cms.php'),
+            __DIR__.'/../routes/web.php' => base_path('routes/web.php'),
         ]);
+
+        $this->publishes([
+            __DIR__.'/Middleware/Authenticate.php' => app_path('Http/Middleware/Authenticate.php'),
+        ]);
+
     }
 }

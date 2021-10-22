@@ -2,7 +2,7 @@
 @section('content')
     <div class="login-box">
         <div class="login-logo">
-            <b>9055管理後台</b>
+            <b>{{ config('cms.store_name') }}管理後台</b>
         </div>
         <!-- /.login-logo -->
         <div class="card">

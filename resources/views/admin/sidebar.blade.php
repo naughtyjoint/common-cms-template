@@ -2,7 +2,7 @@
     <!-- Brand Logo -->
     <a href="{{ route('admin.dashboard') }}" class="brand-link">
         <img src="/img/logo.jpg" alt="9055" class="brand-image img-circle elevation-3">
-        <span class="brand-text font-weight-light">9055管理後台</span>
+        <span class="brand-text font-weight-light">{{ config('cms.store_name') }}管理後台</span>
     </a>
 
     <!-- Sidebar -->
